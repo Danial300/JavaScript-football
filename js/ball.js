@@ -32,7 +32,7 @@ class Ball {
     // جاذبه روی سرعت عمودی اثر می‌گذارد
     this.vy += this.gravity;
 
-    // تغییر موقعیت بر اساس سرعت‌ها
+    // تغییر موقعیت بر اساس سرعت‌
     this.x += this.vx;
     this.y += this.vy;
 
@@ -50,7 +50,7 @@ class Ball {
       this.vy = this.vy * -this.bounce;
       //this.vx = this.vx * this.friction;
 
-      // متوقف کردن لرزش‌های ریز
+      // متوقف کردن لرزش‌های
       if (Math.abs(this.vy) < 0.2) this.vy = 0;
       if (Math.abs(this.vx) < 0.1) this.vx = 0;
     }
